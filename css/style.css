@@ -175,8 +175,8 @@ nav {
   align-items: center;
   padding-bottom: 150px;
   max-width: 800px;
-  padding-top: 50px;
-  padding-bottom: 60px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .bio-content {
@@ -229,7 +229,6 @@ nav {
 
 /* GALLERY */
 .grid {
-  padding-top: 60px;
   padding-bottom: 85px;
 }
 
