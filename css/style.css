@@ -169,6 +169,8 @@ nav {
   transform: translateX(-50%) translateY(-50%);
   margin-top: 30px;
   background-color: rgba(255,255,255,0.8);
+  /* background-color: rgba(0,0,0,1); */
+  /* color: #fff; */
   padding: 15px 25px;
 }
 
@@ -178,15 +180,6 @@ nav {
     line-height: 45px;
     width: 90%;
   }
-}
-
-.page-desc {
-  font-weight: 700;
-  font-size: 11px;
-  line-height: 15px;
-  text-align: center;
-  letter-spacing: 2px;
-  text-transform: uppercase;
 }
 
 /* BIO */
