@@ -173,7 +173,6 @@ nav {
   -ms-flex-align: center;
   align-items: center;
   padding-bottom: 110px;
-  max-width: 800px;
   padding-top: 150px;
 }
 
@@ -230,7 +229,7 @@ nav {
   background-color: rgba(0,0,0,0.75);
 }
 
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 768px) {
   .bio {
     display: block;
     padding-left: 25px;
@@ -243,6 +242,12 @@ nav {
 
   .bio img {
     margin-bottom: 15px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .bio {
+    max-width: 800px;
   }
 }
 
