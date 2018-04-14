@@ -229,7 +229,7 @@ nav {
   background-color: rgba(0,0,0,0.75);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .bio {
     display: block;
     padding-left: 25px;
@@ -340,6 +340,12 @@ nav {
 
 .item-overlay .item-overlay-logo {
   width: 150px;
+}
+
+@media screen and (max-width: 768px) {
+  .item-overlay {
+    opacity: 1;
+  }
 }
 
 /* FOOTER */
