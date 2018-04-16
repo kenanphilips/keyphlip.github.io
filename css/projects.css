@@ -33,3 +33,9 @@
   background-color: #000;
   margin-bottom: 30px;
 }
+
+@media screen and (max-width: 524px) {
+  .nav-item {
+    display: none;
+  }
+}
