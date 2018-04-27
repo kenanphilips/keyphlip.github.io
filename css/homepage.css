@@ -6,19 +6,19 @@
   background-image: url(../images/vancity.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  margin-top: 125px;
+  margin-top: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   position: relative;
-  /* padding: 25px; */
+  padding: 25px;
 }
 
 .hero h1 {
   max-width: 600px;
   padding: 25px;
-  background-color: rgba(255,255,255,1);
+  background-color: rgba(255,255,255,0.95);
   z-index: 1;
 }
 
@@ -30,7 +30,7 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding-bottom: 110px;
+  padding-bottom: 130px;
   padding-top: 110px;
 }
 
@@ -74,24 +74,16 @@
   color: #000;
 }
 
-.bio-content .message-me {
-  background-color: #000;
-  border-radius: 2px;
-  padding: 8px 11px;
-  color: #fff;
-  font-size: 12px;
-  /* text-transform: capitalize; */
-}
-
-.bio-content .message-me:hover {
-  background-color: rgba(0,0,0,0.75);
-}
-
 @media screen and (max-width: 767px) {
   .bio {
     display: block;
     padding-left: 25px;
     padding-right: 25px;
+    text-align: center;
+  }
+
+  .bio-content span:last-child {
+    margin: 0;
   }
 
   .bio-content {
@@ -110,10 +102,6 @@
 }
 
 /* GALLERY */
-.grid {
-  padding-bottom: 85px;
-}
-
 .grid-item {
   margin-bottom: 30px;
 }
@@ -186,7 +174,7 @@
   line-height: 1.5;
   color: #fff;
   font-size: 15px;
-  font-weight: 400;
+  font-weight: 700;
   display: block;
   margin: 0;
 }

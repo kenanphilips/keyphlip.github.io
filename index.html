@@ -47,7 +47,7 @@
     </nav>
 
     <!-- HERO -->
-    <div class="hero container">
+    <div class="hero">
       <h1>A developer & designer from Vancouver who is passionate about code & creativity.</h1>
     </div>
 
@@ -72,7 +72,7 @@
           <!-- Web Developer at Back to the Bible Canada. Freelancer. Musician. Problem Solver! -->
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
         </p>
-        <a class="message-me" href="mailto:philipskenan@gmail.com">Message me!</a>
+        <a class="button" href="mailto:philipskenan@gmail.com">Message me!</a>
       </div>
     </div>
 
@@ -164,18 +164,57 @@
 
     </div>
 
-    <!-- <div class="footer">
+    <div class="footer">
       <div class="container">
-        <span>
-          <img src="/images/logo.svg" alt="Kenan Philips"/>
-          Kenan Philips
-        </span>
-        <h1 class="email">
-          <a href="mailto:philipskenan@gmail.com">philipskenan@gmail.com</a>
-        </h1>
+        <div class="contact-form">
+          <form action="https://formspree.io/philipskenan@gmail.com" method="POST" id="form">
+            <div class="hi">
+              <h1>Say hi.</h1>
+              <p>I won't bite. <em>I promise.</em></p>
+              <ul class="social-media">
+                <!-- <span class="connect-title">Connect with me:</span> -->
+                <li><a href="https://dribbble.com/kenanphilips" target="_blank"><i class="fab fa-dribbble"></i></a></li>
+                <li><a href="https://github.com/keyphlip" target="_blank"><i class="fab fa-github"></i></a></li>
+                <li><a href="https://twitter.com/kenanphilips" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/kenanphilips/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="https://open.spotify.com/user/12161292195?si=6iI0I0veStCkInuBGH54GA" target="_blank"><i class="fab fa-spotify"></i></a></li>
+              </ul>
+            </div>
+            <div class="form-group">
+              <label for="name">Name <span class="required">*</span></label>
+              <input type="text" id="name" class="form-control" placeholder="First and last name please!" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email <span class="required">*</span></label>
+              <input type="email" id="email" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message <span class="required">*</span></label>
+              <textarea type="text" id="message" class="form-control" required></textarea>
+            </div>
+            <input type="text" name="_gotcha" style="display:none" />
+            <input type="submit" value="Send it!" class="button form-button">
+          </form>
+          <div id="thank_you" style="display:none;">
+            <div class="hi">
+              <h1>Thank you.</h1>
+              <p>Thanks for taking the time to message me! I'll get back to you as soon as I can.</p>
+              <ul class="social-media">
+                <!-- <span class="connect-title">Connect with me:</span> -->
+                <li><a href="https://dribbble.com/kenanphilips" target="_blank"><i class="fab fa-dribbble"></i></a></li>
+                <li><a href="https://github.com/keyphlip" target="_blank"><i class="fab fa-github"></i></a></li>
+                <li><a href="https://twitter.com/kenanphilips" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/kenanphilips/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="https://open.spotify.com/user/12161292195?si=6iI0I0veStCkInuBGH54GA" target="_blank"><i class="fab fa-spotify"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
-    </div> -->
+    </div>
 
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>
