@@ -48,7 +48,7 @@
 
     <!-- HERO -->
     <div class="hero">
-      <h1>A developer & designer from Vancouver who is passionate about code & creativity.</h1>
+      <h1>A developer & designer from British Columbia who is passionate about code & creativity.</h1>
     </div>
 
     <!-- BIO -->
@@ -60,7 +60,7 @@
         <h1>Kenan Philips</h1>
         <div class="bio-meta">
           <span class="bio-location">
-            <i class="fas fa-map-pin"></i> Vancouver, BC
+            <i class="fas fa-map-pin"></i> Port Moody, BC
           </span>
           <a href="https://dribbble.com/kenanphilips" target="_blank">
             <span class="bio-dribbble">
@@ -213,29 +213,7 @@
 
     <!-- scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script>
-    $(function(){
-        $("#form").submit(function(e){
-            e.preventDefault();
-            var href = $(this).attr("action");
-            $.ajax({
-                type: "POST",
-                dataType: "json",
-                url: href,
-                data: $(this).serialize(),
-                success: function(response){
-                    if(response.status == "success"){
-                      console.log('success');
-                      $('#form').hide();
-                      $('#thank_you').show();
-                    }else{
-                        alert("An error occured: " + response.message);
-                    }
-                }
-            });
-        });
-    });
-    </script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <script src="js/ajax.js"></script>
   </body>
 </html>
