@@ -10,7 +10,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  text-align: left;
   position: relative;
   padding: 25px;
 }
@@ -79,7 +79,7 @@
     display: block;
     padding-left: 25px;
     padding-right: 25px;
-    text-align: center;
+    /* text-align: center; */
   }
 
   .bio-content span:last-child {
