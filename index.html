@@ -167,12 +167,11 @@
     <div class="footer">
       <div class="container">
         <div class="contact-form">
-          <form action="https://formspree.io/philipskenan@gmail.com" method="POST" id="form">
+          <form action="https://formcarry.com/s/HJBq27g6G" method="POST" accept-charset="UTF-8" id="form">
             <div class="hi">
               <h1>Say hi.</h1>
               <p>I won't bite. <em>I promise.</em></p>
               <ul class="social-media">
-                <!-- <span class="connect-title">Connect with me:</span> -->
                 <li><a href="https://dribbble.com/kenanphilips" target="_blank"><i class="fab fa-dribbble"></i></a></li>
                 <li><a href="https://github.com/keyphlip" target="_blank"><i class="fab fa-github"></i></a></li>
                 <li><a href="https://twitter.com/kenanphilips" target="_blank"><i class="fab fa-twitter"></i></a></li>
@@ -182,25 +181,24 @@
             </div>
             <div class="form-group">
               <label for="name">Name <span class="required">*</span></label>
-              <input type="text" id="name" class="form-control" placeholder="First and last name please!" required>
+              <input type="text" id="name" name="name" class="form-control" placeholder="First and last name please!" required>
             </div>
             <div class="form-group">
               <label for="email">Email <span class="required">*</span></label>
-              <input type="email" id="email" class="form-control" required>
+              <input type="email" id="email" name="email" class="form-control" required>
             </div>
             <div class="form-group">
               <label for="message">Message <span class="required">*</span></label>
-              <textarea type="text" id="message" class="form-control" required></textarea>
+              <textarea type="text" id="message" name="message" class="form-control" required></textarea>
             </div>
-            <input type="text" name="_gotcha" style="display:none" />
+            <input type="hidden" name="_gotcha">
             <input type="submit" value="Send it!" class="button form-button">
           </form>
           <div id="thank_you" style="display:none;">
             <div class="hi">
               <h1>Thank you.</h1>
-              <p>Thanks for taking the time to message me! I'll get back to you as soon as I can.</p>
+              <p>Thanks for taking the time to message me! I'll get back to you as soon as I can. In the meantime, you can follow me at the links below 👇</p>
               <ul class="social-media">
-                <!-- <span class="connect-title">Connect with me:</span> -->
                 <li><a href="https://dribbble.com/kenanphilips" target="_blank"><i class="fab fa-dribbble"></i></a></li>
                 <li><a href="https://github.com/keyphlip" target="_blank"><i class="fab fa-github"></i></a></li>
                 <li><a href="https://twitter.com/kenanphilips" target="_blank"><i class="fab fa-twitter"></i></a></li>
@@ -213,8 +211,31 @@
       </div>
     </div>
 
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <!-- scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script>
+    $(function(){
+        $("#form").submit(function(e){
+            e.preventDefault();
+            var href = $(this).attr("action");
+            $.ajax({
+                type: "POST",
+                dataType: "json",
+                url: href,
+                data: $(this).serialize(),
+                success: function(response){
+                    if(response.status == "success"){
+                      console.log('success');
+                      $('#form').hide();
+                      $('#thank_you').show();
+                    }else{
+                        alert("An error occured: " + response.message);
+                    }
+                }
+            });
+        });
+    });
+    </script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>

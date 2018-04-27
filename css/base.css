@@ -199,8 +199,8 @@ textarea {
   height: 100%;
 }
 
-.form-group:first-child,
-.form-group:nth-child(2) {
+.form-group:nth-child(2),
+.form-group:nth-child(3) {
   margin-bottom: 0;
 }
 
