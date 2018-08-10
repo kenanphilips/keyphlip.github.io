@@ -62,7 +62,7 @@ html, body {
 a {
   text-decoration: none;
   color: #000;
-  opacity: 0.4;
+  opacity: 0.5;
   -webkit-transition: all .2s linear;
   -o-transition: all .2s linear;
   transition: all .2s linear;
@@ -131,17 +131,20 @@ h1, h2, h3, h4, h5, h6 {
 
 .blurb-link {
   opacity: 1;
-  -webkit-box-shadow: 0px -10px 0px 0px #00FFA7 inset;
-  box-shadow: 0px -10px 0px 0px #00FFA7 inset;
-  -webkit-transition: color 150ms ease-in-out, -webkit-box-shadow 150ms ease-in-out;
-  transition: color 150ms ease-in-out, -webkit-box-shadow 150ms ease-in-out;
-  transition: box-shadow 150ms ease-in-out, color 150ms ease-in-out;
-  transition: box-shadow 150ms ease-in-out, color 150ms ease-in-out, -webkit-box-shadow 150ms ease-in-out;
+  -webkit-box-shadow: 0px 0px 0px 0px #00FFA7 inset;
+  box-shadow: 0px 0px 0px 0px #00FFA7 inset;
+  -webkit-transition: color 400ms ease-in-out, -webkit-box-shadow 400ms ease-in-out;
+  transition: color 400ms ease-in-out, -webkit-box-shadow 400ms ease-in-out;
+  transition: box-shadow 400ms ease-in-out, color 400ms ease-in-out;
+  transition: box-shadow 400ms ease-in-out, color 400ms ease-in-out, -webkit-box-shadow 400ms ease-in-out;
+  /* background: #00FFA7; */
+  text-decoration: underline;
 }
 
 .blurb-link:hover {
-  -webkit-box-shadow: 0px -25px 0px 0px #00FFA7 inset;
-  box-shadow: 0px -25px 0px 0px #00FFA7 inset;
+  -webkit-box-shadow: 250px 0px 0px 0px #00FFA7 inset;
+  box-shadow: 250px 0px 0px 0px #00FFA7 inset;
+  text-decoration: underline;
 }
 
 /* FOOTER */
