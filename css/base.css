@@ -137,15 +137,17 @@ h1, h2, h3, h4, h5, h6 {
   transition: color 300ms ease-in-out, -webkit-box-shadow 300ms ease-in-out;
   transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
   transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out, -webkit-box-shadow 300ms ease-in-out;
-  /* background: #00FFA7; */
-  /* text-decoration: underline; */
   color: #00FFA7;
 }
 
 .blurb-link:hover {
   -webkit-box-shadow: 250px 0px 0px 0px #00FFA7 inset;
   box-shadow: 250px 0px 0px 0px #00FFA7 inset;
-  /* text-decoration: underline; */
+}
+
+.hello {
+  /* font-weight: 700; */
+  text-decoration: underline;
 }
 
 /* FOOTER */
