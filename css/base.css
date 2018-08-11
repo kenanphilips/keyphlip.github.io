@@ -62,16 +62,24 @@ html, body {
 a {
   text-decoration: none;
   color: #000;
-  opacity: 0.5;
-  -webkit-transition: all .2s linear;
+  /* opacity: 0.5; */
+  /* -webkit-transition: all .2s linear;
   -o-transition: all .2s linear;
-  transition: all .2s linear;
+  transition: all .2s linear; */
+  -webkit-box-shadow: 0px -3px 0px 0px #00FFA7 inset;
+  box-shadow: 0px -3px 0px 0px #00FFA7 inset;
+  -webkit-transition: -webkit-box-shadow 250ms ease-in-out;
+  transition: -webkit-box-shadow 250ms ease-in-out;
+  transition: box-shadow 250ms ease-in-out;
+  transition: box-shadow 250ms ease-in-out, -webkit-box-shadow 250ms ease-in-out;
 }
 
 a:hover {
   color: #000;
-  opacity: 1;
+  /* opacity: 0.5; */
   text-decoration: none;
+  -webkit-box-shadow: 0px -25px 0px 0px #00FFA7 inset;
+  box-shadow: 0px -25px 0px 0px #00FFA7 inset;
 }
 
 ::-moz-selection {
@@ -99,7 +107,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-list .nav-item:first-child a {
-  padding-left: 0;
+  margin-left: 0;
 }
 
 .nav-list {
@@ -113,7 +121,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-item a {
-  font-weight: 400;
+  font-weight: 600;
+  padding: 0;
+  margin: .5rem 1rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -125,24 +135,24 @@ h1, h2, h3, h4, h5, h6 {
 /* CONTENT */
 .content .blurb {
   font-size: 22px;
-  margin: 3rem 0 4rem 0;
+  margin: 3rem 0 3rem 0;
   font-weight: 600;
 }
 
 .blurb-link {
-  opacity: 1;
+  /* opacity: 1;
   -webkit-box-shadow: 0px 0px 0px 0px #00FFA7 inset;
   box-shadow: 0px 0px 0px 0px #00FFA7 inset;
   -webkit-transition: color 300ms ease-in-out, -webkit-box-shadow 300ms ease-in-out;
   transition: color 300ms ease-in-out, -webkit-box-shadow 300ms ease-in-out;
   transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
   transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out, -webkit-box-shadow 300ms ease-in-out;
-  color: #00FFA7;
+  color: #00FFA7; */
 }
 
 .blurb-link:hover {
-  -webkit-box-shadow: 250px 0px 0px 0px #00FFA7 inset;
-  box-shadow: 250px 0px 0px 0px #00FFA7 inset;
+  /* -webkit-box-shadow: 250px 0px 0px 0px #00FFA7 inset;
+  box-shadow: 250px 0px 0px 0px #00FFA7 inset; */
 }
 
 .hello {
@@ -150,14 +160,21 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: underline;
 }
 
-.thank_you {
-
+.kenan {
+  width: 100%;
+  height: 250px;
+  background-image: url("../images/kenan.jpg");
+  background-repeat: no-repeat;
+  background-position: center 25%;
+  background-size: cover;
+  margin-top: 20px;
 }
 
 /* FOOTER */
 .footer {
   font-size: 16px;
   line-height: 36px;
+  margin-bottom: 50px;
 }
 
 /* FORM */
