@@ -1,0 +1,51 @@
+/* FOOTER */
+.footer {
+  font-size: 16px;
+  line-height: 36px;
+  margin-bottom: 50px;
+}
+
+/* FORM */
+.form-button {
+  width: 100%;
+  padding: 0;
+  cursor: pointer;
+  height: 40px;
+}
+
+form label {
+  font-size: 13px;
+  margin: 0;
+  line-height: 1;
+}
+
+textarea {
+  min-height: 111px;
+}
+
+.contact-form {
+  margin: auto;
+  background-color: #fff;
+  height: 100%;
+}
+
+.required {
+  color: #FF2F45;
+}
+
+.form-control {
+  border-radius: 2px;
+  border: 1px solid #e4e4e4;
+  font-size: 13px;
+  padding: 8px 10px;
+}
+
+.form-control:focus {
+  color: #000;
+  border-color: #000;
+  box-shadow: none;
+}
+
+.form-row .form-group:first-child {
+  margin-bottom: 0;
+}
